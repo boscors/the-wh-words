@@ -1,4 +1,4 @@
-html, body, div#cover {
+html, body, div#cover, .tab-index {
 	height: 100%;
 } 
 body {
@@ -13,10 +13,39 @@ img {
 }
 h1 {
 	font-size: 1.4em;	
+    font-family: 'Londrina Solid', cursive; 
+    text-transform: uppercase;    
 }		
 div#cover {
-	position: relative;
-	font-family: 'Londrina Solid', cursive;		
+	position: relative;	
+    text-align: center;
+}
+.wh-card{
+    font-family: 'Bree Serif', serif;
+}
+.wh-card h1 {
+    margin-top: 5%;
+    padding: 10px 30px;
+    width: 88%;
+    color: #666697;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 10px 10px 0;
+}
+.wh-card .text {
+    margin: 30px;
+}
+.wh-card p {
+    color: #FFF;
+    margin-bottom: 0;
+}
+.tab {
+    height: 20vh;
+    text-align: center;
+    padding-left: 30%;
+}
+.tab p {
+    text-transform: uppercase;
+    font-size: 12px;
     text-align: center;
 }
 .circle-title {
@@ -34,7 +63,6 @@ div#cover {
 .circle-title h1 {
 	margin-top: -30%;	
 	color: #FFF;
-	text-transform: uppercase;
     white-space: nowrap;	
 }	
 .illustration {
@@ -57,7 +85,6 @@ div#cover {
 }		
 @-moz-keyframes {}
 @-webkit-keyframes {}
-
 @media only screen and (min-width: 221px) {		
 h1 {
     font-size: 2.5em;
