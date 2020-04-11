@@ -25,7 +25,7 @@
 	</script>
 	<style>
 		html, body, div#cover {
-			height: 101%;
+			height: 100%;
 		} 
 		body {
 			box-sizing: border-box;		
@@ -53,7 +53,7 @@
 		    border-radius: 50%;	    
 		}
 		.circle-title h1 {
-			margin-top: -23%;	
+			margin-top: -25%;	
 			color: #FFF;
 			text-transform: uppercase;
 		    white-space: nowrap;		
@@ -65,30 +65,43 @@
 		.question-mark {
 		    font-size: 70px;
 		}
-	@media only screen and (max-width: 320px) {
+	@media only screen and (max-width: 319px) {
+		h1 {
+		    font-size: 1.4rem;
+		}		
 		img {
 		    width: 150%;
 		    margin-left: -10%;
 		}
+	}		
+	@media only screen and (min-width: 568px) {
+		.col-sm-6 {
+		    -ms-flex: 0 0 50%;
+		    flex: 0 0 50%;
+		    max-width: 50%;
+		}		
 	}	
-	@media only screen and (max-width: 480px) and (min-height: 800px) {
+	@media only screen and (min-width: 568px) and (min-height: 568px) {
 		.circle-title div {		
-			top: 40%;
-			transform: translateY(-40%);	
+			top: 30%;
+			transform: translateY(-30%);
+		    width: 140%;
+		    padding: 70% 0;				
 		}
+		img {
+		    width: 150%;
+		    margin-left: -50%;
+		}		
 	}	
-	@media only screen and (min-width: 576px) {
-		
-	}
 	</style>
 	<body class="container-fluid">
 		<div id="cover" class="row">
-			<div class="box col-md-6 circle-title">
+			<div class="col-sm-6 circle-title">
 				<div>
 					<h1>The Wh-<br/>question<br/>words</h1>
 				</div>
 			</div>
-			<div class="box col-md-6">
+			<div class="col-sm-6">
 				<div class="illustration">
 					<div class="question-mark">?</div>
 		  			<img src="cover-bear.svg" alt="Polar bear" />
